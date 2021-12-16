@@ -9,6 +9,10 @@ from selenium.webdriver.chromium.options import ChromiumOptions as _ChromiumOpti
 class ChromeOptions(_ChromiumOptions):
     _session = None
     _user_data_dir = None
+    mock_permissions = True
+    emulate_touch = True
+    mock_canvas_fp = True
+    mock_chrome_global = False
 
     @property
     def user_data_dir(self):
